@@ -1,0 +1,372 @@
+/**
+ * Complete 10-Language Translation Dictionary for GROW GREEN, LIVE LONG
+ * Covers Tamil, English, Hindi, Telugu, Malayalam, Kannada, Punjabi, Bengali, Marathi, and Gujarati
+ */
+export const translations = {
+  en: {
+    // Branding & General
+    projectName: 'Grow Green, Live Long',
+    subtitle: 'AI-Powered Smart Agriculture Platform',
+    welcomeSubtitle: 'Smart digital support for Tamil Nadu farmers',
+    getStarted: 'Get Started',
+    trustedPlatform: 'Trusted Platform',
+    featDiagnosis: 'AI Plant Diagnosis',
+    featLiveWeather: 'Live Weather & Market Prices',
+    featMarketplace: 'Direct Farmer Marketplace',
+    selectLanguage: 'Select Preferred Language',
+    selectLangDesc: 'Choose your regional language for personalized agricultural guidance and crop management',
+    continueToDashboard: 'Continue to Dashboard',
+    open: 'Open',
+    loading: 'Loading diagnostic insights...',
+    sampleData: 'Sample Data',
+    organic: 'Organic',
+    backToDashboard: 'Back to Dashboard',
+    
+    // Navigation & Module Titles
+    home: 'Home Dashboard',
+    farmerGreeting: 'Hello Farmer',
+    dashboardWelcome: 'Welcome to Grow Green, Live Long',
+    dashboardSubtitle: 'Choose the service you need today.',
+    plantDoctor: 'AI Plant Doctor',
+    weather: 'Tamil Nadu Weather',
+    marketPrices: 'Market Prices',
+    sellProduct: 'Sell Product',
+    marketplace: 'Product Marketplace',
+    news: 'Agriculture News',
+    admin: 'Admin Dashboard',
+
+    // Badges
+    'plant-doctorBadge': 'AI Diagnostic',
+    'weatherBadge': 'Live Forecast',
+    'market-pricesBadge': 'Mandi Rates',
+    'sell-productBadge': 'Farmer Portal',
+    'marketplaceBadge': 'Direct Buy/Sell',
+    'newsBadge': 'Tamil Nadu Feed',
+
+    // Module Descriptions for Dashboard Cards
+    docDesc: 'Upload leaf images for immediate AI diagnostic detection of crop diseases, organic remedies, and prevention guidance.',
+    weatherDesc: 'Search live agricultural weather forecasts, rainfall probability, and wind alerts across any city, town, or district in Tamil Nadu.',
+    marketDesc: 'Track minimum, maximum, and average mandi prices for fruits, vegetables, grains, seeds, and tools across Tamil Nadu markets.',
+    sellDesc: 'Directly list your harvested products for sale with organic tags, pricing, and contact details for regional buyers.',
+    marketplaceDesc: 'Browse verified farmer produce listings across villages and districts with direct seller contact options.',
+    newsDesc: 'Stay updated with trusted agricultural news, Tamil Nadu government subsidy schemes, and micro-irrigation innovations.',
+
+    // Footer & Advisory
+    footerTagline: 'Empowering farmers with state-of-the-art AI technology and real-time mandi intelligence across Tamil Nadu.',
+    emergencyWarning: 'Note: AI diagnosis is based on visible symptoms. For epidemic crop infections, immediately contact your regional Tamil Nadu Agricultural Extension Officer.',
+    copyright: '© 2026 Grow Green, Live Long. Built for resilient agriculture.'
+  },
+
+  ta: {
+    projectName: 'பசுமையாக வளர்க்கவும், நீடூழி வாழவும்',
+    subtitle: 'AI-ஆதரிக்கப்படும் ஸ்மார்ட் விவசாய தளம்',
+    welcomeSubtitle: 'தமிழ்நாடு விவசாயிகளுக்கான நவீன டிஜிட்டல் துணை',
+    getStarted: 'தொடங்கலாம்',
+    trustedPlatform: 'நம்பகமான தளம்',
+    featDiagnosis: 'AI தாவர நோய் கண்டறிதல்',
+    featLiveWeather: 'நேரடி வானிலை மற்றும் சந்தை விலை',
+    featMarketplace: 'நேரடி விவசாயி சந்தை',
+    selectLanguage: 'உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்',
+    selectLangDesc: 'தனிப்பயனாக்கப்பட்ட விவசாய வழிகாட்டுதலுக்கு உங்கள் தாய்மொழியைத் தேர்ந்தெடுக்கவும்',
+    continueToDashboard: 'முகப்பு பலகைக்கு தொடரவும்',
+    open: 'திறக்கவும்',
+    loading: 'மதிப்பாய்வு செய்யப்படுகிறது...',
+    sampleData: 'மாதிரி தரவு',
+    organic: 'இயற்கை',
+    backToDashboard: 'முகப்புக்குத் திரும்பு',
+
+    home: 'முகப்பு பலகை',
+    farmerGreeting: 'வணக்கம் விவசாயி',
+    dashboardWelcome: 'பசுமையாக வளர்க்கவும், நீடித்து வாழவும் தளத்திற்கு வரவேற்கிறோம்',
+    dashboardSubtitle: 'இன்று உங்களுக்கு தேவையான சேவையைத் தேர்ந்தெடுக்கவும்.',
+    plantDoctor: 'AI தாவர மருத்துவர்',
+    weather: 'தமிழ்நாடு வானிலை',
+    marketPrices: 'சந்தை விலைகள்',
+    sellProduct: 'தயாரிப்பை விற்கவும்',
+    marketplace: 'விவசாய சந்தை',
+    news: 'வேளாண்மை செய்திகள்',
+    admin: 'நிர்வாக பலகை',
+
+    'plant-doctorBadge': 'AI நோய் கண்டறிதல்',
+    'weatherBadge': 'நேரடி வானிலை',
+    'market-pricesBadge': 'மண்டி விலைகள்',
+    'sell-productBadge': 'விவசாயி தளம்',
+    'marketplaceBadge': 'நேரடி வாங்கல் / விற்பனை',
+    'newsBadge': 'தமிழ்நாடு செய்திகள்',
+
+    docDesc: 'பயிர் நோய்கள், இயற்கை சிகிச்சைகள் மற்றும் தடுப்பு வழிகளை அறிய தாவர புகைப்படத்தை பதிவேற்றவும்.',
+    weatherDesc: 'தமிழ்நாட்டின் எந்தவொரு நகரம் அல்லது மாவட்டத்தின் மழைக்கால, வெப்பம் மற்றும் காற்றின் நேரடி வானிலையை அறியுங்கள்.',
+    marketDesc: 'பழங்கள், காய்கறிகள், தானியங்கள் மற்றும் விவசாய கருவிகளின் குறைந்தபட்ச மற்றும் அதிகபட்ச சந்தை விலைகளை அறியுங்கள்.',
+    sellDesc: 'உங்கள் பண்ணை பொருட்களை விலை, இயற்கை முத்திரை மற்றும் கிராம முகவரியுடன் நேரடி விற்பனைக்கு பதிவு செய்யுங்கள்.',
+    marketplaceDesc: 'தமிழ்நாட்டின் பல்வேறு மாவட்ட விவசாயிகள் பட்டியலிட்டுள்ள தூய இயற்கை பண்ணை பொருட்களை பாருங்கள்.',
+    newsDesc: 'விவசாய மானியங்கள், நவீன பாசன முறைகள் மற்றும் தமிழக அரசின் திட்டங்கள் குறித்த புதிய செய்திகளை அறியுங்கள்.',
+
+    footerTagline: 'நவீன AI தொழில்நுட்பம் மற்றும் நேரடி சந்தை தகவல்களுடன் தமிழ்நாட்டு விவசாயிகளை வலுப்படுத்துகிறோம்.',
+    emergencyWarning: 'குறிப்பு: AI பகுப்பாய்வு படத்தின் ஆதாரத்தை மட்டுமே நம்பியுள்ளது. தீவிர பயிர் நோய்களுக்கு அருகில் உள்ள வேளாண் அதிகாரியை அணுகவும்.',
+    copyright: '© 2026 பசுமையாக வளர்க்கவும், நீடூழி வாழவும். விவசாய வளர்ச்சிக்காக உருவாக்கப்பட்டது.'
+  },
+
+  hi: {
+    projectName: 'हरा उगाएं, लंबा जिएं',
+    subtitle: 'एआई-संचालित स्मार्ट कृषि मंच',
+    getStarted: 'शुरू करें',
+    selectLanguage: 'अपनी भाषा चुनें',
+    selectLangDesc: 'कृषि मार्गदर्शन और फसल प्रबंधन के लिए अपनी क्षेत्रीय भाषा का चयन करें',
+    open: 'खोलें',
+    loading: 'लोड हो रहा है...',
+    sampleData: 'नमूना डेटा',
+    organic: 'जैविक',
+    backToDashboard: 'डैशबोर्ड पर लौटें',
+
+    home: 'होम डैशबोर्ड',
+    plantDoctor: 'एआई पौधा डॉक्टर',
+    weather: 'तमिलनाडु मौसम',
+    marketPrices: 'मंडी की कीमतें',
+    sellProduct: 'उत्पाद बेचें',
+    marketplace: 'उत्पाद बाज़ार',
+    news: 'कृषि समाचार',
+    admin: 'एडमिन डैशबोर्ड',
+
+    docDesc: 'फसल रोगों, जैविक उपचारों और रोकथाम मार्गदर्शन के लिए पत्तियों की तस्वीरें अपलोड करें।',
+    weatherDesc: 'तमिलनाडु के किसी भी शहर या जिले में मौसम, वर्षा की संभावना और हवा के अलर्ट की जांच करें।',
+    marketDesc: 'फल, सब्जियां, अनाज और कृषि उपकरणों के लिए न्यूनतम, अधिकतम और औसत मंडी की कीमतों को ट्रैक करें।',
+    sellDesc: 'खरीददारों के लिए अपने कटाई उत्पादों को मूल्य और जैविक टैग के साथ सीधे सूचीबद्ध करें।',
+    marketplaceDesc: 'सीधे किसान से संपर्क विकल्पों के साथ विभिन्न जिलों में किसानों के कृषि उत्पादों को देखें।',
+    newsDesc: 'विश्वसनीय कृषि समाचारों, तमिलनाडु सरकार की सब्सिडी योजनाओं और सिंचाई तकनीकों के साथ अपडेट रहें।',
+
+    footerTagline: 'अत्याधुनिक एआई तकनीक और मंडी की जानकारी के साथ तमिलनाडु के किसानों को सशक्त बनाना।',
+    emergencyWarning: 'नोट: एआई निदान दृश्य लक्षणों पर आधारित है। गंभीर संक्रमण के लिए तुरंत अपने स्थानीय कृषि अधिकारी से संपर्क करें।',
+    copyright: '© 2026 हरा उगाएं, लंबा जिएं। सशक्त कृषि के लिए निर्मित।'
+  },
+
+  te: {
+    projectName: 'ఆకుపచ్చగా పండించండి, కలకాలం జీవించండి',
+    subtitle: 'AI-ఆధారిత స్మార్ట్ వ్యవసాయ వేదిక',
+    getStarted: 'ప్రారంభించండి',
+    selectLanguage: 'మీ భాషను ఎంచుకోండి',
+    selectLangDesc: 'వ్యవసాయ సలహాల కోసం మీ ప్రాంతీయ భాషను ఎంచుకోండి',
+    open: 'తెరువు',
+    loading: 'లోడ్ అవుతోంది...',
+    sampleData: 'నమూనా డేటా',
+    organic: 'సేంద్రియ',
+    backToDashboard: 'డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి',
+
+    home: 'హోమ్ డాష్‌బోర్డ్',
+    plantDoctor: 'AI మొక్కల డాక్టర్',
+    weather: 'తమిళనాడు వాతావరణం',
+    marketPrices: 'మార్కెట్ ధరలు',
+    sellProduct: 'ఉత్పత్తిని అమ్మండి',
+    marketplace: 'ఉత్పత్తి మార్కెట్‌ప్లేస్',
+    news: 'వ్యవసాయ వార్తలు',
+    admin: 'అడ్మిన్ డాష్‌బోర్డ్',
+
+    docDesc: 'పంట వ్యాధులు, సేంద్రీయ నివారణలు తెలుసుకునేందుకు ఆకుల ఫోటోలను అప్‌లోడ్ చేయండి.',
+    weatherDesc: 'తమిళనాడులోని ఏ నగరంలోనైనా వర్షపాతం, ఉష్ణోగ్రత మరియు వాతావరణ హెచ్చరికలను శోధించండి.',
+    marketDesc: 'పండ్లు, కూరగాయలు, ధాన్యాలు మరియు సాధనాల మార్కెట్ ధరలను ట్రాక్ చేయండి.',
+    sellDesc: 'కొనుగోలుదారుల కోసం మీ పంట ఉత్పత్తులను నేరుగా లిస్ట్ చేయండి.',
+    marketplaceDesc: 'వివిధ గ్రామాలు మరియు జిల్లాల్లో రైతులు లిస్ట్ చేసిన ఉత్పత్తులను చూడండి.',
+    newsDesc: 'ప్రభుత్వ రాయితీ పథకాలు మరియు ఆధునిక వ్యవసాయ వార్తలతో అప్‌డేట్‌గా ఉండండి.',
+
+    footerTagline: 'తమిళనాడు రైతులకు అత్యాధునిక AI సాంకేతికతతో సేవలు అందించడం.',
+    emergencyWarning: 'గమనిక: AI నిర్ధారణ ఫోటోలపై ఆధారపడి ఉంటుంది. తీవ్రమైన వ్యాధులకు వ్యవసాయ అధికారిని సంప్రదించండి.',
+    copyright: '© 2026 ఆకుపచ్చగా పండించండి, కలకాలం జీవించండి.'
+  },
+
+  ml: {
+    projectName: 'പച്ചപ്പ് വിളയിക്കൂ, ദീർഘകാലം ജീവിക്കൂ',
+    subtitle: 'AI-അധിഷ്ഠിത സ്മാർട്ട് കാർഷിക പ്ലാറ്റ്‌ഫോം',
+    getStarted: 'തുടങ്ങുക',
+    selectLanguage: 'നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക',
+    selectLangDesc: 'കാർഷിക നിർദ്ദേശങ്ങൾക്കായി നിങ്ങളുടെ പ്രാദേശിക ഭാഷ തിരഞ്ഞെടുക്കുക',
+    open: 'തുറക്കുക',
+    loading: 'ലോഡ് ചെയ്യുന്നു...',
+    sampleData: 'സാമ്പിൾ ഡാറ്റ',
+    organic: 'ജൈവം',
+    backToDashboard: 'ഡാഷ്‌ബോർഡിലേക്ക് മടങ്ങുക',
+
+    home: 'ഹോം ഡാഷ്‌ബോർഡ്',
+    plantDoctor: 'AI പ്ലാന്റ് ഡോക്ടർ',
+    weather: 'തമിഴ്നാട് കാലാവസ്ഥ',
+    marketPrices: 'വിപണി വിലകൾ',
+    sellProduct: 'ഉൽപ്പന്നം വിൽക്കുക',
+    marketplace: 'ഉൽപ്പന്ന വിപണി',
+    news: 'കാർഷിക വാർത്തകൾ',
+    admin: 'അഡ്മിൻ പാനൽ',
+
+    docDesc: 'വിളകളിലെ രോഗങ്ങൾ കണ്ടെത്തുന്നതിനും ജൈവ പ്രതിവിധികൾക്കുമായി ഇലകളുടെ ചിത്രങ്ങൾ അപ്‌ലോഡ് ചെയ്യുക.',
+    weatherDesc: 'തമിഴ്‌നാട്ടിലെ ഏതു ജില്ലയിലെയും മഴ, താപനില, കാറ്റ് എന്നിവയുടെ വിവരങ്ങൾ പരിശോധിക്കുക.',
+    marketDesc: 'പഴങ്ങൾ, പച്ചക്കറികൾ, ധാന്യങ്ങൾ എന്നിവയുടെ വിപണി വിലകൾ തത്സമയം അറിയുക.',
+    sellDesc: 'നിങ്ങളുടെ കാർഷിക ഉൽപ്പന്നങ്ങൾ വിലയും ജൈവ വിവരങ്ങളുമായി നേരിട്ട് വിൽപ്പനയ്ക്ക് വെക്കുക.',
+    marketplaceDesc: 'വിവിധ ജില്ലകളിലെ കർഷകർ നേരിട്ട് വിൽപ്പനയ്ക്ക് വെച്ചിരിക്കുന്ന ഉൽപ്പന്നങ്ങൾ കാണുക.',
+    newsDesc: 'സർക്കാർ പദ്ധതികളും കാർഷിക സാങ്കേതിക വിദ്യയുമായി ബന്ധപ്പെട്ട ഏറ്റവും പുതിയ വാർത്തകൾ വായിക്കുക.',
+
+    footerTagline: 'തമിഴ്‌നാട്ടിലെ കർഷകർക്ക് AI സാങ്കേതികവിദ്യയിലൂടെ കരുത്തുപകരുന്നു.',
+    emergencyWarning: 'ശ്രദ്ധിക്കുക: AI നിഗമനങ്ങൾ ഫോട്ടോകളെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്. അടിയന്തര സാഹചര്യങ്ങളിൽ കൃഷി ഓഫീസറെ ബന്ധപ്പെടുക.',
+    copyright: '© 2026 പച്ചപ്പ് വിളയിക്കൂ, ദീർഘകാലം ജീവിക്കൂ.'
+  },
+
+  kn: {
+    projectName: 'ಹಸಿರನ್ನು ಬೆಳೆಸಿ, ದೀರ್ಘಕಾಲ ಬದುಕಿ',
+    subtitle: 'AI-ಚಾಲಿತ ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ವೇದಿಕೆ',
+    getStarted: 'ಪ್ರಾರಂಭಿಸಿ',
+    selectLanguage: 'ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ',
+    selectLangDesc: 'ಉತ್ತಮ ಕೃಷಿ ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆರಿಸಿ',
+    open: 'ತೆರೆಯಿರಿ',
+    loading: 'ಲೋಡ್ ಆಗುತ್ತಿದೆ...',
+    sampleData: 'ಮಾದರಿ ಡೇಟಾ',
+    organic: 'ಸಾವಯವ',
+    backToDashboard: 'ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ',
+
+    home: 'ಮುಖಪುಟ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್',
+    plantDoctor: 'AI ಸಸ್ಯ ವೈದ್ಯರು',
+    weather: 'ತಮಿಳುನಾಡು ಹವಾಮಾನ',
+    marketPrices: 'ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳು',
+    sellProduct: 'ಉತ್ಪನ್ನವನ್ನು ಮಾರಾಟ ಮಾಡಿ',
+    marketplace: 'ಉತ್ಪನ್ನ ಮಾರುಕಟ್ಟೆ',
+    news: 'ಕೃಷಿ ಸುದ್ದಿ',
+    admin: 'ನಿರ್ವಾಹಕ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್',
+
+    docDesc: 'ಬೆಳೆ ರೋಗಗಳನ್ನು ಮತ್ತು ಸಾವಯವ ಪರಿಹಾರಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು ಸಸ್ಯದ ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.',
+    weatherDesc: 'ತಮಿಳುನಾಡಿನ ಯಾವುದೇ ನಗರ ಅಥವಾ ಜಿಲ್ಲೆಯ ಹವಾಮಾನ ಮತ್ತು ಮಳೆಯ ಮುನ್ಸೂಚನೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.',
+    marketDesc: 'ಹಣ್ಣುಗಳು, ತರಕಾರಿಗಳು ಮತ್ತು ಧಾನ್ಯಗಳ ಪ್ರಸ್ತುತ ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ.',
+    sellDesc: 'ನಿಮ್ಮ ಕೃಷಿ ಉತ್ಪನ್ನಗಳನ್ನು ಖರೀದಿದಾರರಿಗಾಗಿ ನೇರವಾಗಿ ಪಟ್ಟಿ ಮಾಡಿ.',
+    marketplaceDesc: 'ರೈತರ ಕೃಷಿ ಉತ್ಪನ್ನಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ನೇರವಾಗಿ ಸಂಪರ್ಕಿಸಿ.',
+    newsDesc: 'ಕೃಷಿ ಸುದ್ದಿಗಳು ಮತ್ತು ಸರ್ಕಾರಿ ಸಬ್ಸಿಡಿ ಯೋಜನೆಗಳ ಕುರಿತು ಅಪ್‌ಡೇಟ್ ಆಗಿರಿ.',
+
+    footerTagline: 'AI ತಂತ್ರಜ್ಞಾನದೊಂದಿಗೆ ರೈತರನ್ನು ಸಬಲೀಕರಣಗೊಳಿಸುವುದು.',
+    emergencyWarning: 'ಗಮನಿಸಿ: AI ವಿಶ್ಲೇಷಣೆಯು ಫೋಟೋಗಳನ್ನು ಆಧರಿಸಿದೆ. ತುರ್ತು ಸಮಸ್ಯೆಗಳಿಗೆ ಕೃಷಿ ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.',
+    copyright: '© 2026 ಹಸಿರನ್ನು ಬೆಳೆಸಿ, ದೀರ್ಘಕಾಲ ಬದುಕಿ.'
+  },
+
+  pa: {
+    projectName: 'ਹਰੀਆਵਲ ਉਗਾਓ, ਲੰਮਾ ਜੀਓ',
+    subtitle: 'AI-ਅਧਾਰਿਤ ਸਮਾਰਟ ਖੇਤੀਬਾੜੀ ਪਲੇਟਫਾਰਮ',
+    getStarted: 'ਸ਼ੁਰੂ ਕਰੋ',
+    selectLanguage: 'ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ',
+    selectLangDesc: 'ਖੇਤੀਬਾੜੀ ਮਾਰਗਦਰਸ਼ਨ ਲਈ ਆਪਣੀ ਖੇਤਰੀ ਭਾਸ਼ਾ ਚੁਣੋ',
+    open: 'ਖੋਲ੍ਹੋ',
+    loading: 'ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...',
+    sampleData: 'ਨਮੂਨਾ ਡਾਟਾ',
+    organic: 'ਜੈਵਿਕ (ਆਰਗੈਨਿਕ)',
+    backToDashboard: 'ਡੈਸ਼ਬੋਰਡ ’ਤੇ ਵਾਪਸ ਜਾਓ',
+
+    home: 'ਹੋਮ ਡੈਸ਼ਬੋਰਡ',
+    plantDoctor: 'AI ਪੌਦਾ ਡਾਕਟਰ',
+    weather: 'ਤਾਮਿਲਨਾਡੂ ਮੌਸਮ',
+    marketPrices: 'ਮੰਡੀ ਦੇ ਭਾਅ',
+    sellProduct: 'ਉਤਪਾਦ ਵੇਚੋ',
+    marketplace: 'ਉਤਪਾਦ ਬਾਜ਼ਾਰ',
+    news: 'ਖੇਤੀਬਾੜੀ ਖ਼ਬਰਾਂ',
+    admin: 'ਐਡਮਿਨ ਡੈਸ਼ਬੋਰਡ',
+
+    docDesc: 'ਫਸਲਾਂ ਦੀਆਂ ਬਿਮਾਰੀਆਂ ਅਤੇ ਜੈਵਿਕ ਇਲਾਜਾਂ ਦੀ ਜਾਣਕਾਰੀ ਲਈ ਪੱਤਿਆਂ ਦੀਆਂ ਤਸਵੀਰਾਂ ਅੱਪਲੋਡ ਕਰੋ।',
+    weatherDesc: 'ਤਾਮਿਲਨਾਡੂ ਦੇ ਕਿਸੇ ਵੀ ਸ਼ਹਿਰ ਜਾਂ ਜ਼ਿਲ੍ਹੇ ਦੇ ਮੌਸਮ ਅਤੇ ਮੀਂਹ ਦੀ ਭਵਿੱਖਬਾਣੀ ਦੀ ਜਾਂਚ ਕਰੋ।',
+    marketDesc: 'ਫਲਾਂ, ਸਬਜ਼ੀਆਂ ਅਤੇ ਅਨਾਜ ਦੇ ਮੰਡੀ ਭਾਅ ਅਤੇ ਅੱਪਡੇਟ ਜਾਣੋ।',
+    sellDesc: 'ਆਪਣੀ ਫਸਲ ਨੂੰ ਸਿੱਧੇ ਖਰੀਦਦਾਰਾਂ ਲਈ ਲਿਸਟ ਕਰੋ।',
+    marketplaceDesc: 'ਵੱਖ-ਵੱਖ ਪਿੰਡਾਂ ਅਤੇ ਜ਼ਿਲ੍ਹਿਆਂ ਦੇ ਕਿਸਾਨਾਂ ਦੇ ਉਤਪਾਦਾਂ ਦੀ ਸੂਚੀ ਦੇਖੋ।',
+    newsDesc: 'ਸਰਕਾਰੀ ਸਕੀਮਾਂ ਅਤੇ ਨਵੀਆਂ ਸਿੰਚਾਈ ਤਕਨੀਕਾਂ ਨਾਲ ਜੁੜੇ ਰਹੋ।',
+
+    footerTagline: 'ਕਿਸਾਨਾਂ ਨੂੰ AI ਤਕਨੀਕ ਅਤੇ ਸਹੀ ਮੰਡੀ ਜਾਣਕਾਰੀ ਨਾਲ ਸਸ਼ਕਤ ਕਰਨਾ।',
+    emergencyWarning: 'ਨੋਟ: AI ਡਾਇਗਨੋਸਿਸ ਤਸਵੀਰਾਂ ’ਤੇ ਅਧਾਰਿਤ ਹੈ। ਗੰਭੀਰ ਬਿਮਾਰੀਆਂ ਲਈ ਖੇਤੀਬਾੜੀ ਅਧਿਕਾਰੀ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।',
+    copyright: '© 2026 ਹਰੀਆਵਲ ਉਗਾਓ, ਲੰਮਾ ਜੀਓ।'
+  },
+
+  bn: {
+    projectName: 'সবুজ ফলান, দীর্ঘজীবী হোন',
+    subtitle: 'AI-চালিত স্মার্ট কৃষি প্ল্যাটফর্ম',
+    getStarted: 'শুরু করুন',
+    selectLanguage: 'আপনার ভাষা নির্বাচন করুন',
+    selectLangDesc: 'কৃষি নির্দেশনার জন্য আপনার আঞ্চলিক ভাষা বেছে নিন',
+    open: 'খুলুন',
+    loading: 'লোড হচ্ছে...',
+    sampleData: 'নমুনা ডেটা',
+    organic: 'জৈব',
+    backToDashboard: 'ড্যাশবোর্ডে ফিরে যান',
+
+    home: 'হোম ড্যাশবোর্ড',
+    plantDoctor: 'AI উদ্ভিদ ডাক্তার',
+    weather: 'তামিলনাড়ু আবহাওয়া',
+    marketPrices: 'বাজারের দাম',
+    sellProduct: 'পণ্য বিক্রি করুন',
+    marketplace: 'পণ্য মার্কেটপ্লেস',
+    news: 'কৃষি সংবাদ',
+    admin: 'অ্যাডমিন ড্যাশবোর্ড',
+
+    docDesc: 'ফসলের রোগ নির্ণয় এবং জৈব প্রতিকার জানতে পাতার ছবি আপলোড করুন।',
+    weatherDesc: 'তামিলনাড়ুর যেকোনো শহর বা জেলার বৃষ্টির সম্ভাবনা এবং আবহাওয়ার পূর্বাভাস দেখুন।',
+    marketDesc: 'ফল, সবজি, শস্য এবং কৃষি সরঞ্জামের বাজার মূল্য ট্র্যাক করুন।',
+    sellDesc: 'ক্রেতাদের জন্য আপনার উৎপাদিত ফসল সরাসরি তালিকাভুক্ত করুন।',
+    marketplaceDesc: 'বিভিন্ন জেলার কৃষকদের তালিকাভুক্ত খাঁটি জৈব পণ্যগুলি অন্বেষণ করুন।',
+    newsDesc: 'সরকারি কৃষি স্কিম এবং আধুনিক সেচ ব্যবস্থার খবর জানতে আপডেট থাকুন।',
+
+    footerTagline: 'আধুনিক AI প্রযুক্তি এবং রিয়েল-টাইম বাজার তথ্যের মাধ্যমে কৃষকদের ক্ষমতায়ন।',
+    emergencyWarning: 'দ্রষ্টব্য: AI রোগ নির্ণয় ছবির উপর ভিত্তি করে। গুরুতর সংক্রমণে কৃষি কর্মকর্তার পরামর্শ নিন।',
+    copyright: '© 2026 সবুজ ফলান, দীর্ঘজীবী হোন।'
+  },
+
+  mr: {
+    projectName: 'हिरवेगार पिकवा, दीर्घायुषी व्हा',
+    subtitle: 'AI-संचालित स्मार्ट कृषी मंच',
+    getStarted: 'सुरवात करा',
+    selectLanguage: 'तुमची भाषा निवडा',
+    selectLangDesc: 'वैयक्तिकृत कृषी मार्गदर्शनासाठी तुमची प्रादेशिक भाषा निवडा',
+    open: 'उघडा',
+    loading: 'लोड होत आहे...',
+    sampleData: 'नमुना डेटा',
+    organic: 'सेंद्रिय',
+    backToDashboard: 'डॅशबोर्डवर परत जा',
+
+    home: 'होम डॅशबोर्ड',
+    plantDoctor: 'AI वनस्पती डॉक्टर',
+    weather: 'तामिळनाडू हवामान',
+    marketPrices: 'बाजार भाव',
+    sellProduct: 'उत्पादन विका',
+    marketplace: 'उत्पादन बाजारपेठ',
+    news: 'कृषी बातम्या',
+    admin: 'अ‍ॅडमीन डॅशबोर्ड',
+
+    docDesc: 'पिकांचे रोग ओळखण्यासाठी आणि सेंद्रिय उपायांसाठी पानांचे फोटो अपलोड करा.',
+    weatherDesc: 'तामिळनाडूतील कोणत्याही शहराचे हवामान आणि पावसाचा अंदाज तपासा.',
+    marketDesc: 'फळे, भाज्या, धान्ये आणि शेतमालाचे किमान आणि कमाल बाजार भाव जाणून घ्या.',
+    sellDesc: 'खरेदीदारांसाठी तुमची शेती उत्पादने थेट विक्रीसाठी लिस्ट करा.',
+    marketplaceDesc: 'विविध जिल्ह्यांमधील शेतकऱ्यांची सेंद्रिय उत्पादने पहा.',
+    newsDesc: 'सरकारी योजना आणि कृषी क्षेत्रातील नवीन अद्यतनांबद्दल माहिती मिळवा.',
+
+    footerTagline: 'आधुनिक AI तंत्रज्ञान आणि बाजारातील अचूक माहितीसह शेतकऱ्यांचे सक्षमीकरण.',
+    emergencyWarning: 'टीप: AI निदान फोटोंवर आधारित आहे. तातडीच्या समस्येसाठी जवळच्या कृषी अधिकाऱ्याशी संपर्क साधा.',
+    copyright: '© 2026 हिरवेगार पिकवा, दीर्घायुषी व्हा.'
+  },
+
+  gu: {
+    projectName: 'હરિયાળી ઉગાડો, લાંબુ જીવો',
+    subtitle: 'AI-સંચાલિત સ્માર્ટ કૃષિ પ્લેટફોર્મ',
+    getStarted: 'શરૂ કરો',
+    selectLanguage: 'તમારી ભાષા પસંદ કરો',
+    selectLangDesc: 'કૃષિ માર્ગદર્શન અને પાક વ્યવસ્થાપન માટે તમારી ભાષા પસંદ કરો',
+    open: 'ખોલો',
+    loading: 'લોડ થઈ રહ્યું છે...',
+    sampleData: 'નમૂના ડેટા',
+    organic: 'જૈવિક (ઓર્ગેનિક)',
+    backToDashboard: 'ડેશબોર્ડ પર પાછા જાઓ',
+
+    home: 'હોમ ડેશબોર્ડ',
+    plantDoctor: 'AI પ્લાન્ટ ડોક્ટર',
+    weather: 'તામિલનાડુ હવામાન',
+    marketPrices: 'બજાર ભાવ',
+    sellProduct: 'ઉત્પાદન વેચો',
+    marketplace: 'ઉત્પાદન બજાર',
+    news: 'કૃષિ સમાચાર',
+    admin: 'એડમિન ડેશબોર્ડ',
+
+    docDesc: 'પાકના રોગો ઓળખવા અને જૈવિક ઉપાયો માટે છોડના ફોટા અપલોડ કરો.',
+    weatherDesc: 'તામિલનાડુના કોઈપણ શહેર અથવા જિલ્લાના હવામાન અને વરસાદની આગાહી તપાસો.',
+    marketDesc: 'ફળો, શાકભાજી, અનાજ અને સાધનોના બજાર ભાવ ટ્રૅક કરો.',
+    sellDesc: 'ખરીદદારો માટે તમારા કૃષિ ઉત્પાદનોને સીધા વેચાણ માટે સૂચિબદ્ધ કરો.',
+    marketplaceDesc: 'વિવિધ ગામો અને જિલ્લાના ખેડૂતો દ્વારા સૂચિબદ્ધ ઉત્પાદનો જુઓ.',
+    newsDesc: 'સરકારી સબસીડી યોજનાઓ અને આધુનિક કૃષિ સમાચારો સાથે અપડેટ રહો.',
+
+    footerTagline: 'AI ટેકનોલોજી અને રીઅલ-ટાઇમ માર્કેટ માહિતી સાથે ખેડૂતોનું સશક્તિકરણ.',
+    emergencyWarning: 'નોંધ: AI નિદાન ફોટાઓ પર આધારિત છે. ગંભીર રોગો માટે સ્થાનિક કૃષિ અધિકારીનો સંપર્ક કરો.',
+    copyright: '© 2026 હરિયાળી ઉગાડો, લાંબુ જીવો.'
+  }
+};

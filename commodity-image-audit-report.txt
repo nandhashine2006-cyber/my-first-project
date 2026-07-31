@@ -1,0 +1,9 @@
+Total pages scanned: 161
+Total records scanned: 3842
+Total unique commodities: 83
+Correct real image mappings: 9
+Missing commodity images: 74
+Invalid image files: 0
+Wrong image mappings removed: 17
+Generic/random image mappings removed: 17
+Text placeholders required: 74

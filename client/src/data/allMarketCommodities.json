@@ -1,0 +1,1111 @@
+[
+  {
+    "originalNames": [
+      "Tomato"
+    ],
+    "normalizedKey": "tomato",
+    "category": "Vegetables",
+    "varieties": [
+      "Deshi",
+      "Other",
+      "Local"
+    ],
+    "recordCount": 205,
+    "requiredImageFilename": "tomato.jpg",
+    "verifiedImageFile": "tomato.jpg"
+  },
+  {
+    "originalNames": [
+      "Mango(Raw-Ripe)"
+    ],
+    "normalizedKey": "mango-raw-ripe",
+    "category": "Fruits",
+    "varieties": [
+      "Mango - Raw-Ripe"
+    ],
+    "recordCount": 147,
+    "requiredImageFilename": "mango-raw-ripe.jpg",
+    "verifiedImageFile": "mango-raw-ripe.jpg"
+  },
+  {
+    "originalNames": [
+      "Raddish"
+    ],
+    "normalizedKey": "raddish",
+    "category": "Vegetables",
+    "varieties": [
+      "Raddish"
+    ],
+    "recordCount": 182,
+    "requiredImageFilename": "raddish.jpg",
+    "verifiedImageFile": "raddish.jpg"
+  },
+  {
+    "originalNames": [
+      "Snakeguard"
+    ],
+    "normalizedKey": "snakeguard",
+    "category": "Vegetables",
+    "varieties": [
+      "Snakeguard"
+    ],
+    "recordCount": 187,
+    "requiredImageFilename": "snakeguard.jpg",
+    "verifiedImageFile": "snakeguard.jpg"
+  },
+  {
+    "originalNames": [
+      "Amaranthus"
+    ],
+    "normalizedKey": "amaranthus",
+    "category": "Vegetables",
+    "varieties": [
+      "Amaranthus"
+    ],
+    "recordCount": 197,
+    "requiredImageFilename": "amaranthus.jpg",
+    "verifiedImageFile": "amaranthus.jpg"
+  },
+  {
+    "originalNames": [
+      "Bottle gourd"
+    ],
+    "normalizedKey": "bottle-gourd",
+    "category": "Vegetables",
+    "varieties": [
+      "Bottle Gourd"
+    ],
+    "recordCount": 190,
+    "requiredImageFilename": "bottle-gourd.jpg",
+    "verifiedImageFile": "bottle-gourd.jpg"
+  },
+  {
+    "originalNames": [
+      "Brinjal"
+    ],
+    "normalizedKey": "brinjal",
+    "category": "Vegetables",
+    "varieties": [
+      "Round",
+      "Other"
+    ],
+    "recordCount": 212,
+    "requiredImageFilename": "brinjal.jpg",
+    "verifiedImageFile": "brinjal.jpg"
+  },
+  {
+    "originalNames": [
+      "Rose(Local)"
+    ],
+    "normalizedKey": "rose-local",
+    "category": "Flowers",
+    "varieties": [
+      "Rose (Local)"
+    ],
+    "recordCount": 28,
+    "requiredImageFilename": "rose-local.jpg",
+    "verifiedImageFile": "rose-local.jpg"
+  },
+  {
+    "originalNames": [
+      "Colacasia"
+    ],
+    "normalizedKey": "colacasia",
+    "category": "Vegetables",
+    "varieties": [
+      "Colacasia"
+    ],
+    "recordCount": 72,
+    "requiredImageFilename": "colacasia.jpg",
+    "verifiedImageFile": "colacasia.jpg"
+  },
+  {
+    "originalNames": [
+      "Guava"
+    ],
+    "normalizedKey": "guava",
+    "category": "Fruits",
+    "varieties": [
+      "Guava Allahabad"
+    ],
+    "recordCount": 123,
+    "requiredImageFilename": "guava.jpg",
+    "verifiedImageFile": "guava.jpg"
+  },
+  {
+    "originalNames": [
+      "Ridgeguard(Tori)"
+    ],
+    "normalizedKey": "ridgeguard",
+    "category": "Vegetables",
+    "varieties": [
+      "Ridgeguard(Tori)"
+    ],
+    "recordCount": 164,
+    "requiredImageFilename": "ridgeguard.jpg",
+    "verifiedImageFile": "ridgeguard.jpg"
+  },
+  {
+    "originalNames": [
+      "Beans"
+    ],
+    "normalizedKey": "beans",
+    "category": "Vegetables",
+    "varieties": [
+      "Beans (Whole)"
+    ],
+    "recordCount": 167,
+    "requiredImageFilename": "beans.jpg",
+    "verifiedImageFile": "beans.jpg"
+  },
+  {
+    "originalNames": [
+      "Mint(Pudina)"
+    ],
+    "normalizedKey": "mint",
+    "category": "Vegetables",
+    "varieties": [
+      "Mint(Pudina)"
+    ],
+    "recordCount": 169,
+    "requiredImageFilename": "mint.jpg",
+    "verifiedImageFile": "mint.jpg"
+  },
+  {
+    "originalNames": [
+      "Jasmine"
+    ],
+    "normalizedKey": "jasmine",
+    "category": "Flowers",
+    "varieties": [
+      "Jasmine"
+    ],
+    "recordCount": 14,
+    "requiredImageFilename": "jasmine.jpg",
+    "verifiedImageFile": "jasmine.jpg"
+  },
+  {
+    "originalNames": [
+      "Bhindi(Ladies Finger)"
+    ],
+    "normalizedKey": "okra",
+    "category": "Vegetables",
+    "varieties": [
+      "Bhindi"
+    ],
+    "recordCount": 212,
+    "requiredImageFilename": "okra.jpg",
+    "verifiedImageFile": "okra.jpg"
+  },
+  {
+    "originalNames": [
+      "Apple"
+    ],
+    "normalizedKey": "apple",
+    "category": "Fruits",
+    "varieties": [
+      "American"
+    ],
+    "recordCount": 33,
+    "requiredImageFilename": "apple.jpg",
+    "verifiedImageFile": "apple.jpg"
+  },
+  {
+    "originalNames": [
+      "Indian Beans(Seam)"
+    ],
+    "normalizedKey": "indian-beans",
+    "category": "Vegetables",
+    "varieties": [
+      "Indian Beans (Seam)"
+    ],
+    "recordCount": 45,
+    "requiredImageFilename": "indian-beans.jpg",
+    "verifiedImageFile": "indian-beans.jpg"
+  },
+  {
+    "originalNames": [
+      "Beetroot"
+    ],
+    "normalizedKey": "beetroot",
+    "category": "Vegetables",
+    "varieties": [
+      "Beetroot"
+    ],
+    "recordCount": 158,
+    "requiredImageFilename": "beetroot.jpg",
+    "verifiedImageFile": "beetroot.jpg"
+  },
+  {
+    "originalNames": [
+      "Cabbage"
+    ],
+    "normalizedKey": "cabbage",
+    "category": "Vegetables",
+    "varieties": [
+      "Cabbage"
+    ],
+    "recordCount": 155,
+    "requiredImageFilename": "cabbage.jpg",
+    "verifiedImageFile": "cabbage.jpg"
+  },
+  {
+    "originalNames": [
+      "Carrot"
+    ],
+    "normalizedKey": "carrot",
+    "category": "Vegetables",
+    "varieties": [
+      "Pusakesar"
+    ],
+    "recordCount": 162,
+    "requiredImageFilename": "carrot.jpg",
+    "verifiedImageFile": "carrot.jpg"
+  },
+  {
+    "originalNames": [
+      "Banana - Green"
+    ],
+    "normalizedKey": "banana-green",
+    "category": "Fruits",
+    "varieties": [
+      "Banana - Green"
+    ],
+    "recordCount": 194,
+    "requiredImageFilename": "banana-green.jpg",
+    "verifiedImageFile": "banana-green.jpg"
+  },
+  {
+    "originalNames": [
+      "Papaya"
+    ],
+    "normalizedKey": "papaya",
+    "category": "Fruits",
+    "varieties": [
+      "Papaya"
+    ],
+    "recordCount": 154,
+    "requiredImageFilename": "papaya.jpg",
+    "verifiedImageFile": "papaya.jpg"
+  },
+  {
+    "originalNames": [
+      "Garlic"
+    ],
+    "normalizedKey": "garlic",
+    "category": "Spices",
+    "varieties": [
+      "Garlic"
+    ],
+    "recordCount": 96,
+    "requiredImageFilename": "garlic.jpg",
+    "verifiedImageFile": "garlic.jpg"
+  },
+  {
+    "originalNames": [
+      "Banana"
+    ],
+    "normalizedKey": "banana",
+    "category": "Fruits",
+    "varieties": [
+      "Red Banana",
+      "Besrai",
+      "Poovan",
+      "Other",
+      "Karpura",
+      "Nendra Bale",
+      "Elakki Bale"
+    ],
+    "recordCount": 188,
+    "requiredImageFilename": "banana.jpg",
+    "verifiedImageFile": "banana.jpg"
+  },
+  {
+    "originalNames": [
+      "Bitter gourd"
+    ],
+    "normalizedKey": "bitter-gourd",
+    "category": "Vegetables",
+    "varieties": [
+      "Bitter Gourd",
+      "Other"
+    ],
+    "recordCount": 205,
+    "requiredImageFilename": "bitter-gourd.jpg",
+    "verifiedImageFile": "bitter-gourd.jpg"
+  },
+  {
+    "originalNames": [
+      "Green Chilli"
+    ],
+    "normalizedKey": "green-chilli",
+    "category": "Spices",
+    "varieties": [
+      "Green Chilly"
+    ],
+    "recordCount": 201,
+    "requiredImageFilename": "green-chilli.jpg",
+    "verifiedImageFile": "green-chilli.jpg"
+  },
+  {
+    "originalNames": [
+      "Lime"
+    ],
+    "normalizedKey": "lime",
+    "category": "Vegetables",
+    "varieties": [
+      "Lime"
+    ],
+    "recordCount": 48,
+    "requiredImageFilename": "lime.jpg",
+    "verifiedImageFile": "lime.jpg"
+  },
+  {
+    "originalNames": [
+      "Lemon"
+    ],
+    "normalizedKey": "lemon",
+    "category": "Fruits",
+    "varieties": [
+      "Lemon"
+    ],
+    "recordCount": 170,
+    "requiredImageFilename": "lemon.jpg",
+    "verifiedImageFile": "lemon.jpg"
+  },
+  {
+    "originalNames": [
+      "Elephant Yam(Suran)/Amorphophallus"
+    ],
+    "normalizedKey": "elephant-yamamorphophallus",
+    "category": "Vegetables",
+    "varieties": [
+      "Elephant Yam (Suran)"
+    ],
+    "recordCount": 116,
+    "requiredImageFilename": "elephant-yamamorphophallus.jpg",
+    "verifiedImageFile": "elephant-yamamorphophallus.jpg"
+  },
+  {
+    "originalNames": [
+      "Pumpkin"
+    ],
+    "normalizedKey": "pumpkin",
+    "category": "Vegetables",
+    "varieties": [
+      "Pumpkin"
+    ],
+    "recordCount": 165,
+    "requiredImageFilename": "pumpkin.jpg",
+    "verifiedImageFile": "pumpkin.jpg"
+  },
+  {
+    "originalNames": [
+      "Mango"
+    ],
+    "normalizedKey": "mango",
+    "category": "Fruits",
+    "varieties": [
+      "Safeda",
+      "Neelam",
+      "Other"
+    ],
+    "recordCount": 95,
+    "requiredImageFilename": "mango.jpg",
+    "verifiedImageFile": "mango.jpg"
+  },
+  {
+    "originalNames": [
+      "Amla(Nelli Kai)"
+    ],
+    "normalizedKey": "amla",
+    "category": "Vegetables",
+    "varieties": [
+      "Amla"
+    ],
+    "recordCount": 77,
+    "requiredImageFilename": "amla.jpg",
+    "verifiedImageFile": "amla.jpg"
+  },
+  {
+    "originalNames": [
+      "Mashrooms"
+    ],
+    "normalizedKey": "mashrooms",
+    "category": "Vegetables",
+    "varieties": [
+      "Mashrooms"
+    ],
+    "recordCount": 28,
+    "requiredImageFilename": "mashrooms.jpg",
+    "verifiedImageFile": "mashrooms.jpg"
+  },
+  {
+    "originalNames": [
+      "Marigold(Calcutta)"
+    ],
+    "normalizedKey": "marigold",
+    "category": "Flowers",
+    "varieties": [
+      "Marigold(Calcutta)"
+    ],
+    "recordCount": 28,
+    "requiredImageFilename": "marigold.jpg",
+    "verifiedImageFile": "marigold.jpg"
+  },
+  {
+    "originalNames": [
+      "Pomegranate"
+    ],
+    "normalizedKey": "pomegranate",
+    "category": "Vegetables",
+    "varieties": [
+      "Pomogranate"
+    ],
+    "recordCount": 31,
+    "requiredImageFilename": "pomegranate.jpg",
+    "verifiedImageFile": "pomegranate.jpg"
+  },
+  {
+    "originalNames": [
+      "Tapioca"
+    ],
+    "normalizedKey": "tapioca",
+    "category": "Vegetables",
+    "varieties": [
+      "Tapioca"
+    ],
+    "recordCount": 78,
+    "requiredImageFilename": "tapioca.jpg",
+    "verifiedImageFile": "tapioca.jpg"
+  },
+  {
+    "originalNames": [
+      "Grapes"
+    ],
+    "normalizedKey": "grapes",
+    "category": "Fruits",
+    "varieties": [
+      "Annabesahai"
+    ],
+    "recordCount": 30,
+    "requiredImageFilename": "grapes.jpg",
+    "verifiedImageFile": "grapes.jpg"
+  },
+  {
+    "originalNames": [
+      "Onion Green"
+    ],
+    "normalizedKey": "green-onion",
+    "category": "Vegetables",
+    "varieties": [
+      "Onion Green"
+    ],
+    "recordCount": 187,
+    "requiredImageFilename": "green-onion.jpg",
+    "verifiedImageFile": "green-onion.jpg"
+  },
+  {
+    "originalNames": [
+      "Chow Chow"
+    ],
+    "normalizedKey": "chow-chow",
+    "category": "Vegetables",
+    "varieties": [
+      "Chow Chow"
+    ],
+    "recordCount": 143,
+    "requiredImageFilename": "chow-chow.jpg",
+    "verifiedImageFile": "chow-chow.jpg"
+  },
+  {
+    "originalNames": [
+      "Green Avare(W)"
+    ],
+    "normalizedKey": "green-avare",
+    "category": "Vegetables",
+    "varieties": [
+      "Green Avare (W)",
+      "Other"
+    ],
+    "recordCount": 176,
+    "requiredImageFilename": "green-avare.jpg",
+    "verifiedImageFile": "green-avare.jpg"
+  },
+  {
+    "originalNames": [
+      "Ashgourd"
+    ],
+    "normalizedKey": "ashgourd",
+    "category": "Vegetables",
+    "varieties": [
+      "Gouard"
+    ],
+    "recordCount": 188,
+    "requiredImageFilename": "ashgourd.jpg",
+    "verifiedImageFile": "ashgourd.jpg"
+  },
+  {
+    "originalNames": [
+      "Yam(Ratalu)"
+    ],
+    "normalizedKey": "yam",
+    "category": "Vegetables",
+    "varieties": [
+      "Yam (Ratalu)"
+    ],
+    "recordCount": 88,
+    "requiredImageFilename": "yam.jpg",
+    "verifiedImageFile": "yam.jpg"
+  },
+  {
+    "originalNames": [
+      "Potato"
+    ],
+    "normalizedKey": "potato",
+    "category": "Vegetables",
+    "varieties": [
+      "Red Nanital",
+      "Other"
+    ],
+    "recordCount": 190,
+    "requiredImageFilename": "potato.jpg",
+    "verifiedImageFile": "potato.jpg"
+  },
+  {
+    "originalNames": [
+      "Cluster beans"
+    ],
+    "normalizedKey": "cluster-beans",
+    "category": "Vegetables",
+    "varieties": [
+      "Cluster Beans"
+    ],
+    "recordCount": 183,
+    "requiredImageFilename": "cluster-beans.jpg",
+    "verifiedImageFile": "cluster-beans.jpg"
+  },
+  {
+    "originalNames": [
+      "Coconut"
+    ],
+    "normalizedKey": "coconut",
+    "category": "Fruits",
+    "varieties": [
+      "Coconut"
+    ],
+    "recordCount": 208,
+    "requiredImageFilename": "coconut.jpg",
+    "verifiedImageFile": "coconut.jpg"
+  },
+  {
+    "originalNames": [
+      "Green Peas"
+    ],
+    "normalizedKey": "green-peas",
+    "category": "Vegetables",
+    "varieties": [
+      "Green Peas"
+    ],
+    "recordCount": 26,
+    "requiredImageFilename": "green-peas.jpg",
+    "verifiedImageFile": "green-peas.jpg"
+  },
+  {
+    "originalNames": [
+      "Cucumbar(Kheera)"
+    ],
+    "normalizedKey": "cucumbar",
+    "category": "Vegetables",
+    "varieties": [
+      "Cucumbar"
+    ],
+    "recordCount": 98,
+    "requiredImageFilename": "cucumbar.jpg",
+    "verifiedImageFile": "cucumbar.jpg"
+  },
+  {
+    "originalNames": [
+      "Cowpea(Veg)"
+    ],
+    "normalizedKey": "cowpea",
+    "category": "Vegetables",
+    "varieties": [
+      "Cowpea (Veg)"
+    ],
+    "recordCount": 65,
+    "requiredImageFilename": "cowpea.jpg",
+    "verifiedImageFile": "cowpea.jpg"
+  },
+  {
+    "originalNames": [
+      "Coriander(Leaves)"
+    ],
+    "normalizedKey": "coriander",
+    "category": "Spices",
+    "varieties": [
+      "I Sort"
+    ],
+    "recordCount": 198,
+    "requiredImageFilename": "coriander.jpg",
+    "verifiedImageFile": "coriander.jpg"
+  },
+  {
+    "originalNames": [
+      "Sweet Potato"
+    ],
+    "normalizedKey": "sweet-potato",
+    "category": "Vegetables",
+    "varieties": [
+      "Hosur Red"
+    ],
+    "recordCount": 84,
+    "requiredImageFilename": "sweet-potato.jpg",
+    "verifiedImageFile": "sweet-potato.jpg"
+  },
+  {
+    "originalNames": [
+      "Betal Leaves"
+    ],
+    "normalizedKey": "betal-leaves",
+    "category": "Vegetables",
+    "varieties": [
+      "Mysore"
+    ],
+    "recordCount": 17,
+    "requiredImageFilename": "betal-leaves.jpg",
+    "verifiedImageFile": "betal-leaves.jpg"
+  },
+  {
+    "originalNames": [
+      "Ginger(Green)"
+    ],
+    "normalizedKey": "ginger-green",
+    "category": "Spices",
+    "varieties": [
+      "Green Ginger"
+    ],
+    "recordCount": 141,
+    "requiredImageFilename": "ginger-green.jpg",
+    "verifiedImageFile": "ginger-green.jpg"
+  },
+  {
+    "originalNames": [
+      "Thondekai"
+    ],
+    "normalizedKey": "thondekai",
+    "category": "Vegetables",
+    "varieties": [
+      "Thondekai"
+    ],
+    "recordCount": 107,
+    "requiredImageFilename": "thondekai.jpg",
+    "verifiedImageFile": "thondekai.jpg"
+  },
+  {
+    "originalNames": [
+      "Onion"
+    ],
+    "normalizedKey": "onion",
+    "category": "Vegetables",
+    "varieties": [
+      "Bellary"
+    ],
+    "recordCount": 199,
+    "requiredImageFilename": "onion.jpg",
+    "verifiedImageFile": "onion.jpg"
+  },
+  {
+    "originalNames": [
+      "Chikoos(Sapota)"
+    ],
+    "normalizedKey": "chikoo",
+    "category": "Vegetables",
+    "varieties": [
+      "Sapota"
+    ],
+    "recordCount": 45,
+    "requiredImageFilename": "chikoo.jpg",
+    "verifiedImageFile": "chikoo.jpg"
+  },
+  {
+    "originalNames": [
+      "Capsicum"
+    ],
+    "normalizedKey": "capsicum",
+    "category": "Vegetables",
+    "varieties": [
+      "Capsicum"
+    ],
+    "recordCount": 69,
+    "requiredImageFilename": "capsicum.jpg",
+    "verifiedImageFile": "capsicum.jpg"
+  },
+  {
+    "originalNames": [
+      "Knool Khol"
+    ],
+    "normalizedKey": "knool-khol",
+    "category": "Vegetables",
+    "varieties": [
+      "Knool Khol"
+    ],
+    "recordCount": 93,
+    "requiredImageFilename": "knool-khol.jpg",
+    "verifiedImageFile": "knool-khol.jpg"
+  },
+  {
+    "originalNames": [
+      "Tender Coconut"
+    ],
+    "normalizedKey": "tender-coconut",
+    "category": "Fruits",
+    "varieties": [
+      "Tender Coconut"
+    ],
+    "recordCount": 77,
+    "requiredImageFilename": "tender-coconut.jpg",
+    "verifiedImageFile": "tender-coconut.jpg"
+  },
+  {
+    "originalNames": [
+      "Cauliflower"
+    ],
+    "normalizedKey": "cauliflower",
+    "category": "Flowers",
+    "varieties": [
+      "Ranchi"
+    ],
+    "recordCount": 146,
+    "requiredImageFilename": "cauliflower.jpg",
+    "verifiedImageFile": "cauliflower.jpg"
+  },
+  {
+    "originalNames": [
+      "Custard Apple(Sharifa)"
+    ],
+    "normalizedKey": "custard-apple",
+    "category": "Fruits",
+    "varieties": [
+      "Custard Apple(Sharifa)"
+    ],
+    "recordCount": 12,
+    "requiredImageFilename": "custard-apple.jpg",
+    "verifiedImageFile": "custard-apple.jpg"
+  },
+  {
+    "originalNames": [
+      "Drumstick"
+    ],
+    "normalizedKey": "drumstick",
+    "category": "Vegetables",
+    "varieties": [
+      "Drumstick"
+    ],
+    "recordCount": 160,
+    "requiredImageFilename": "drumstick.jpg",
+    "verifiedImageFile": "drumstick.jpg"
+  },
+  {
+    "originalNames": [
+      "Paddy(Common)"
+    ],
+    "normalizedKey": "paddy",
+    "category": "Grains",
+    "varieties": [
+      "Ponni",
+      "Other",
+      "B P T",
+      "ADT 37"
+    ],
+    "recordCount": 17,
+    "requiredImageFilename": "paddy.jpg",
+    "verifiedImageFile": "paddy.jpg"
+  },
+  {
+    "originalNames": [
+      "Tamarind Fruit"
+    ],
+    "normalizedKey": "tamarind-fruit",
+    "category": "Vegetables",
+    "varieties": [
+      "Tamarind Fruit"
+    ],
+    "recordCount": 26,
+    "requiredImageFilename": "tamarind-fruit.jpg",
+    "verifiedImageFile": "tamarind-fruit.jpg"
+  },
+  {
+    "originalNames": [
+      "Fig(Anjura/Anjeer)"
+    ],
+    "normalizedKey": "fig",
+    "category": "Vegetables",
+    "varieties": [
+      "Anjura"
+    ],
+    "recordCount": 6,
+    "requiredImageFilename": "fig.jpg",
+    "verifiedImageFile": "fig.jpg"
+  },
+  {
+    "originalNames": [
+      "Baby Corn"
+    ],
+    "normalizedKey": "baby-corn",
+    "category": "Vegetables",
+    "varieties": [
+      "Baby Corn"
+    ],
+    "recordCount": 17,
+    "requiredImageFilename": "baby-corn.jpg",
+    "verifiedImageFile": "baby-corn.jpg"
+  },
+  {
+    "originalNames": [
+      "Tube Rose(Loose)"
+    ],
+    "normalizedKey": "tube-rose",
+    "category": "Flowers",
+    "varieties": [
+      "Tube Rose (Loose)"
+    ],
+    "recordCount": 4,
+    "requiredImageFilename": "tube-rose.jpg",
+    "verifiedImageFile": "tube-rose.jpg"
+  },
+  {
+    "originalNames": [
+      "Sweet Corn"
+    ],
+    "normalizedKey": "sweet-corn",
+    "category": "Vegetables",
+    "varieties": [
+      "Sweet Corn"
+    ],
+    "recordCount": 39,
+    "requiredImageFilename": "sweet-corn.jpg",
+    "verifiedImageFile": "sweet-corn.jpg"
+  },
+  {
+    "originalNames": [
+      "Jamun(Narale Hannu)"
+    ],
+    "normalizedKey": "jamun",
+    "category": "Vegetables",
+    "varieties": [
+      "Jamun"
+    ],
+    "recordCount": 4,
+    "requiredImageFilename": "jamun.jpg",
+    "verifiedImageFile": "jamun.jpg"
+  },
+  {
+    "originalNames": [
+      "Groundnut"
+    ],
+    "normalizedKey": "groundnut",
+    "category": "Oilseeds",
+    "varieties": [
+      "Big (With Shell)"
+    ],
+    "recordCount": 63,
+    "requiredImageFilename": "groundnut.jpg",
+    "verifiedImageFile": "groundnut.jpg"
+  },
+  {
+    "originalNames": [
+      "Jack Fruit(Ripe)"
+    ],
+    "normalizedKey": "jack-fruit-ripe",
+    "category": "Vegetables",
+    "varieties": [
+      "Jack Fruit"
+    ],
+    "recordCount": 18,
+    "requiredImageFilename": "jack-fruit-ripe.jpg",
+    "verifiedImageFile": "jack-fruit-ripe.jpg"
+  },
+  {
+    "originalNames": [
+      "Pear(Marasebu)"
+    ],
+    "normalizedKey": "pear",
+    "category": "Vegetables",
+    "varieties": [
+      "Pears"
+    ],
+    "recordCount": 5,
+    "requiredImageFilename": "pear.jpg",
+    "verifiedImageFile": "pear.jpg"
+  },
+  {
+    "originalNames": [
+      "Water Melon"
+    ],
+    "normalizedKey": "water-melon",
+    "category": "Fruits",
+    "varieties": [
+      "Water Melon"
+    ],
+    "recordCount": 32,
+    "requiredImageFilename": "water-melon.jpg",
+    "verifiedImageFile": "water-melon.jpg"
+  },
+  {
+    "originalNames": [
+      "Ragi(Finger Millet)"
+    ],
+    "normalizedKey": "ragi",
+    "category": "Grains",
+    "varieties": [
+      "Other"
+    ],
+    "recordCount": 5,
+    "requiredImageFilename": "ragi.jpg",
+    "verifiedImageFile": "ragi.jpg"
+  },
+  {
+    "originalNames": [
+      "Maize"
+    ],
+    "normalizedKey": "maize",
+    "category": "Grains",
+    "varieties": [
+      "Other"
+    ],
+    "recordCount": 8,
+    "requiredImageFilename": "maize.jpg",
+    "verifiedImageFile": "maize.jpg"
+  },
+  {
+    "originalNames": [
+      "Tube Flower"
+    ],
+    "normalizedKey": "tube-flower",
+    "category": "Flowers",
+    "varieties": [
+      "Tube Flower"
+    ],
+    "recordCount": 4,
+    "requiredImageFilename": "tube-flower.jpg",
+    "verifiedImageFile": "tube-flower.jpg"
+  },
+  {
+    "originalNames": [
+      "Karbuja(Musk Melon)"
+    ],
+    "normalizedKey": "karbuja",
+    "category": "Fruits",
+    "varieties": [
+      "Karbhuja"
+    ],
+    "recordCount": 7,
+    "requiredImageFilename": "karbuja.jpg",
+    "verifiedImageFile": "karbuja.jpg"
+  },
+  {
+    "originalNames": [
+      "Mousambi(Sweet Lime)"
+    ],
+    "normalizedKey": "mousambi",
+    "category": "Vegetables",
+    "varieties": [
+      "Mousambi"
+    ],
+    "recordCount": 31,
+    "requiredImageFilename": "mousambi.jpg",
+    "verifiedImageFile": "mousambi.jpg"
+  },
+  {
+    "originalNames": [
+      "Orange"
+    ],
+    "normalizedKey": "orange",
+    "category": "Fruits",
+    "varieties": [
+      "Darjeeling"
+    ],
+    "recordCount": 13,
+    "requiredImageFilename": "orange.jpg",
+    "verifiedImageFile": "orange.jpg"
+  },
+  {
+    "originalNames": [
+      "Pineapple"
+    ],
+    "normalizedKey": "pineapple",
+    "category": "Fruits",
+    "varieties": [
+      "Pine Apple"
+    ],
+    "recordCount": 17,
+    "requiredImageFilename": "pineapple.jpg",
+    "verifiedImageFile": "pineapple.jpg"
+  },
+  {
+    "originalNames": [
+      "Kakada"
+    ],
+    "normalizedKey": "kakada",
+    "category": "Vegetables",
+    "varieties": [
+      "Kakada"
+    ],
+    "recordCount": 4,
+    "requiredImageFilename": "kakada.jpg",
+    "verifiedImageFile": "kakada.jpg"
+  },
+  {
+    "originalNames": [
+      "Soyabean"
+    ],
+    "normalizedKey": "soyabean",
+    "category": "Vegetables",
+    "varieties": [
+      "Local"
+    ],
+    "recordCount": 8,
+    "requiredImageFilename": "soyabean.jpg",
+    "verifiedImageFile": "soyabean.jpg"
+  },
+  {
+    "originalNames": [
+      "Bajra(Pearl Millet/Cumbu)"
+    ],
+    "normalizedKey": "bajra",
+    "category": "Grains",
+    "varieties": [
+      "Other"
+    ],
+    "recordCount": 2,
+    "requiredImageFilename": "bajra.jpg",
+    "verifiedImageFile": "bajra.jpg"
+  },
+  {
+    "originalNames": [
+      "Turnip"
+    ],
+    "normalizedKey": "turnip",
+    "category": "Vegetables",
+    "varieties": [
+      "Turnip"
+    ],
+    "recordCount": 2,
+    "requiredImageFilename": "turnip.jpg",
+    "verifiedImageFile": "turnip.jpg"
+  },
+  {
+    "originalNames": [
+      "Chili Red"
+    ],
+    "normalizedKey": "chili-red",
+    "category": "Vegetables",
+    "varieties": [
+      "Bold"
+    ],
+    "recordCount": 3,
+    "requiredImageFilename": "chili-red.jpg",
+    "verifiedImageFile": "chili-red.jpg"
+  }
+]

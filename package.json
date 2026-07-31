@@ -1,0 +1,30 @@
+{
+  "name": "grow-green-live-long",
+  "version": "1.0.0",
+  "description": "AI-Powered Smart Agriculture Platform for Farmers in Tamil Nadu",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "mern",
+    "agriculture",
+    "ai",
+    "gemini",
+    "tamil-nadu",
+    "farming"
+  ],
+  "author": "Antigravity & User",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "duckduckgo-images-api": "^1.0.5",
+    "googlethis": "^1.8.0"
+  }
+}

@@ -59,7 +59,7 @@ const ProductDetails = () => {
   }
 
   const defaultImage = 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600';
-  const imgSource = product.imageUrl ? `${API_BASE_URL}${product.imageUrl}` : defaultImage;
+  const imgSource = product.imageUrl ? product.imageUrl.startsWith('http') ? product.imageUrl : `${API_BASE_URL}${product.imageUrl}` : defaultImage;
 
   const formatDate = (dateString) => {
     if (!dateString) return 'N/A';

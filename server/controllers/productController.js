@@ -46,7 +46,7 @@ const createProduct = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Product image is required' });
     }
 
-    const imageUrl = `/uploads/products/${req.file.filename}`;
+    const imageUrl = req.file.path;
 
     const newProduct = await Product.create({
       farmerName,
@@ -168,7 +168,7 @@ const getProducts = async (req, res) => {
         case 'quantity-high': sortObj = { quantity: -1 }; break;
         case 'name': sortObj = { productName: 1 }; break;
         // Text search score sorting if query exists
-        default: 
+        default:
           if (q) sortObj = { score: { $meta: "textScore" } };
           break;
       }
@@ -236,7 +236,7 @@ const getProductById = async (req, res) => {
 const updateProductApproval = async (req, res) => {
   try {
     const { approvalStatus } = req.body;
-    
+
     if (!['pending', 'approved', 'rejected'].includes(approvalStatus)) {
       return res.status(400).json({ success: false, message: 'Invalid approval status' });
     }
@@ -275,7 +275,7 @@ const updateProductApproval = async (req, res) => {
 const updateProductStatus = async (req, res) => {
   try {
     const { status } = req.body;
-    
+
     if (!['available', 'sold', 'expired'].includes(status)) {
       return res.status(400).json({ success: false, message: 'Invalid status' });
     }

@@ -202,7 +202,7 @@ const Marketplace = () => {
             {products.map((item) => (
               <div key={item._id} className="card" style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
-                  <img src={item.imageUrl ? `${API_BASE_URL}${item.imageUrl}` : defaultImage} alt={item.productName} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.src = defaultImage; }} />
+                  <img src={item.imageUrl ? item.imageUrl.startsWith('http') ? item.imageUrl : `${API_BASE_URL}${item.imageUrl}` : defaultImage} alt={item.productName} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.src = defaultImage; }} />
                   {item.isOrganic && (
                     <div style={{ position: 'absolute', top: '0.75rem', left: '0.75rem' }}>
                       <span className="badge badge-organic">🌱 Organic</span>

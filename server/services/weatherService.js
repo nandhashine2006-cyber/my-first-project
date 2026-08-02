@@ -39,37 +39,137 @@ class WeatherService {
   }
 
   /**
-   * Normalize raw OpenWeather response into standardized clean structure
-   */
+ * Normalize raw OpenWeather response into standardized clean structure
+ */
   normalizeWeatherData(weather, forecastList = [], locationMeta = {}) {
+    const indiaTimeOptions = {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    };
+
+    const indiaTimeWithSecondsOptions = {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    };
+
+    const indiaDateOptions = {
+      timeZone: 'Asia/Kolkata',
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    };
+
     return {
       placeName: locationMeta.name || weather.name || 'Salem',
       districtOrState: locationMeta.state || 'Tamil Nadu',
       country: locationMeta.country || weather.sys?.country || 'IN',
-      latitude: weather.coord?.lat || locationMeta.lat || 11.6643,
-      longitude: weather.coord?.lon || locationMeta.lon || 78.146,
-      currentTemperatureCelsius: Math.round(weather.main?.temp || 29),
-      feelsLikeTemperature: Math.round(weather.main?.feels_like || 32),
-      minimumTemperature: Math.round(weather.main?.temp_min || 26),
-      maximumTemperature: Math.round(weather.main?.temp_max || 34),
-      weatherCondition: weather.weather?.[0]?.main || 'Clouds',
-      weatherDescription: weather.weather?.[0]?.description || 'scattered clouds',
-      weatherIcon: `https://openweathermap.org/img/wn/${weather.weather?.[0]?.icon || '02d'}@2x.png`,
-      humidity: weather.main?.humidity || 68,
-      windSpeed: Math.round((weather.wind?.speed || 3.5) * 3.6), // Convert m/s to km/h
-      atmosphericPressure: weather.main?.pressure || 1012,
-      visibilityKm: Math.round((weather.visibility || 10000) / 1000),
-      sunriseTime: weather.sys?.sunrise ? new Date(weather.sys.sunrise * 1000).toLocaleTimeString() : '06:12 AM',
-      sunsetTime: weather.sys?.sunset ? new Date(weather.sys.sunset * 1000).toLocaleTimeString() : '06:34 PM',
-      lastUpdatedTime: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
+
+      latitude:
+        weather.coord?.lat ??
+        locationMeta.lat ??
+        11.6643,
+
+      longitude:
+        weather.coord?.lon ??
+        locationMeta.lon ??
+        78.146,
+
+      currentTemperatureCelsius: Math.round(
+        weather.main?.temp ?? 29
+      ),
+
+      feelsLikeTemperature: Math.round(
+        weather.main?.feels_like ?? 32
+      ),
+
+      minimumTemperature: Math.round(
+        weather.main?.temp_min ?? 26
+      ),
+
+      maximumTemperature: Math.round(
+        weather.main?.temp_max ?? 34
+      ),
+
+      weatherCondition:
+        weather.weather?.[0]?.main || 'Clouds',
+
+      weatherDescription:
+        weather.weather?.[0]?.description || 'scattered clouds',
+
+      weatherIcon: `https://openweathermap.org/img/wn/${weather.weather?.[0]?.icon || '02d'
+        }@2x.png`,
+
+      humidity:
+        weather.main?.humidity ?? 68,
+
+      windSpeed: Math.round(
+        (weather.wind?.speed ?? 3.5) * 3.6
+      ),
+
+      atmosphericPressure:
+        weather.main?.pressure ?? 1012,
+
+      visibilityKm: Math.round(
+        (weather.visibility ?? 10000) / 1000
+      ),
+
+      sunriseTime: weather.sys?.sunrise
+        ? new Date(
+          weather.sys.sunrise * 1000
+        ).toLocaleTimeString(
+          'en-IN',
+          indiaTimeOptions
+        )
+        : '06:12 AM',
+
+      sunsetTime: weather.sys?.sunset
+        ? new Date(
+          weather.sys.sunset * 1000
+        ).toLocaleTimeString(
+          'en-IN',
+          indiaTimeOptions
+        )
+        : '06:34 PM',
+
+      lastUpdatedTime: new Date().toLocaleTimeString(
+        'en-IN',
+        indiaTimeWithSecondsOptions
+      ),
+
       isLiveWeather: Boolean(this.apiKey),
-      forecastList: forecastList.slice(0, 8).map(item => ({
-        time: new Date(item.dt * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        date: new Date(item.dt * 1000).toLocaleDateString(),
-        temperatureCelsius: Math.round(item.main?.temp || 29),
-        condition: item.weather?.[0]?.main || 'Clouds',
-        icon: `https://openweathermap.org/img/wn/${item.weather?.[0]?.icon || '02d'}@2x.png`
-      }))
+
+      forecastList: forecastList
+        .slice(0, 8)
+        .map((item) => ({
+          time: new Date(
+            item.dt * 1000
+          ).toLocaleTimeString(
+            'en-IN',
+            indiaTimeOptions
+          ),
+
+          date: new Date(
+            item.dt * 1000
+          ).toLocaleDateString(
+            'en-IN',
+            indiaDateOptions
+          ),
+
+          temperatureCelsius: Math.round(
+            item.main?.temp ?? 29
+          ),
+
+          condition:
+            item.weather?.[0]?.main || 'Clouds',
+
+          icon: `https://openweathermap.org/img/wn/${item.weather?.[0]?.icon || '02d'
+            }@2x.png`
+        }))
     };
   }
 
@@ -84,11 +184,11 @@ class WeatherService {
     }
 
     if (!this.apiKey) {
-      return { 
-        success: true, 
-        isLiveWeather: false, 
+      return {
+        success: true,
+        isLiveWeather: false,
         notice: 'OpenWeather API is not configured. Displaying simulated regional weather preview.',
-        data: this.getFallbackWeather(place) 
+        data: this.getFallbackWeather(place)
       };
     }
 
@@ -138,11 +238,11 @@ class WeatherService {
     }
 
     if (!this.apiKey) {
-      return { 
-        success: true, 
-        isLiveWeather: false, 
+      return {
+        success: true,
+        isLiveWeather: false,
         notice: 'OpenWeather API is not configured. Displaying simulated coordinate weather preview.',
-        data: this.getFallbackWeather(locationMeta.name || 'Current Location') 
+        data: this.getFallbackWeather(locationMeta.name || 'Current Location')
       };
     }
 
@@ -156,8 +256,8 @@ class WeatherService {
       ]);
 
       const normalizedData = this.normalizeWeatherData(
-        weatherResp.data, 
-        forecastResp.data?.list || [], 
+        weatherResp.data,
+        forecastResp.data?.list || [],
         locationMeta
       );
 

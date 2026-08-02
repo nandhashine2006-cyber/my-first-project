@@ -37,7 +37,7 @@ app.use(helmet({
 const clientURL = process.env.CLIENT_URL || 'http://localhost:5174';
 app.use(cors({
   origin: [clientURL, 'http://localhost:5174'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-admin-secret'],
   credentials: true
 }));

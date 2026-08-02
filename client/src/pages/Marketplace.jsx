@@ -3,6 +3,9 @@ import { useLanguage } from '../context/LanguageContext';
 import { ShoppingBag, Search, MapPin, Filter, X, RefreshCw, PhoneCall, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:5001';
+
 const TN_DISTRICTS = [
   'Ariyalur', 'Chengalpattu', 'Chennai', 'Coimbatore', 'Cuddalore', 'Dharmapuri', 'Dindigul',
   'Erode', 'Kallakurichi', 'Kanchipuram', 'Kanyakumari', 'Karur', 'Krishnagiri', 'Madurai',
@@ -30,7 +33,7 @@ const Marketplace = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  
+
   const [filters, setFilters] = useState({
     q: '',
     category: '',
@@ -40,7 +43,7 @@ const Marketplace = () => {
     sort: 'latest',
     page: 1
   });
-  
+
   const [searchInput, setSearchInput] = useState('');
   const [pagination, setPagination] = useState({ totalPages: 1, total: 0 });
   const [showFilters, setShowFilters] = useState(false);
@@ -57,10 +60,10 @@ const Marketplace = () => {
       if (filters.organic) queryParams.append('organic', 'true');
       if (filters.sort) queryParams.append('sort', filters.sort);
       queryParams.append('page', filters.page);
-      
-      const response = await fetch(`http://localhost:5001/api/products?${queryParams.toString()}`);
+
+      const response = await fetch(`${API_BASE_URL}/api/products?${queryParams.toString()}`);
       const data = await response.json();
-      
+
       if (response.ok && data.success) {
         setProducts(data.data);
         if (data.pagination) setPagination(data.pagination);
@@ -121,7 +124,7 @@ const Marketplace = () => {
             <p style={{ color: '#64748b' }}>Direct farm-to-buyer produce listings.</p>
           </div>
         </div>
-        
+
         <button onClick={fetchProducts} className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <RefreshCw size={18} /> Refresh
         </button>
@@ -129,19 +132,19 @@ const Marketplace = () => {
 
       <div className="card" style={{ marginBottom: '2rem', padding: '1.5rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between', alignItems: 'center' }}>
-          
+
           <form onSubmit={handleSearchSubmit} style={{ flex: '1 1 300px', display: 'flex', position: 'relative' }}>
             <Search size={20} color="#94a3b8" style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)' }} />
-            <input 
-              type="text" 
-              placeholder="Search products, village, description..." 
+            <input
+              type="text"
+              placeholder="Search products, village, description..."
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               className="form-input"
               style={{ paddingLeft: '3rem', width: '100%' }}
             />
           </form>
-          
+
           <div style={{ display: 'flex', gap: '1rem' }}>
             <button onClick={() => setShowFilters(!showFilters)} className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Filter size={18} /> Filters
@@ -158,19 +161,19 @@ const Marketplace = () => {
               <option value="">All Categories</option>
               {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
             </select>
-            
+
             <select name="district" value={filters.district} onChange={handleFilterChange} className="form-select" style={{ flex: '1 1 200px' }}>
               <option value="">All Districts</option>
               {TN_DISTRICTS.map(d => <option key={d} value={d}>{d}</option>)}
             </select>
-            
+
             <input type="text" name="village" value={filters.village} onChange={handleFilterChange} placeholder="Filter by Village" className="form-input" style={{ flex: '1 1 200px' }} />
-            
+
             <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', flex: '1 1 200px' }}>
               <input type="checkbox" name="organic" checked={filters.organic} onChange={handleFilterChange} style={{ width: '20px', height: '20px' }} />
               <span>Organic Only</span>
             </label>
-            
+
             <button onClick={clearFilters} className="btn" style={{ background: '#f1f5f9', color: '#475569' }}>
               <X size={18} /> Clear Filters
             </button>
@@ -199,7 +202,7 @@ const Marketplace = () => {
             {products.map((item) => (
               <div key={item._id} className="card" style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
-                  <img src={item.imageUrl ? `http://localhost:5001${item.imageUrl}` : defaultImage} alt={item.productName} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.src = defaultImage; }} />
+                  <img src={item.imageUrl ? `${API_BASE_URL}${item.imageUrl}` : defaultImage} alt={item.productName} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.src = defaultImage; }} />
                   {item.isOrganic && (
                     <div style={{ position: 'absolute', top: '0.75rem', left: '0.75rem' }}>
                       <span className="badge badge-organic">🌱 Organic</span>
@@ -218,7 +221,7 @@ const Marketplace = () => {
                       </div>
                       <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{formatDate(item.createdAt)}</span>
                     </div>
-                    
+
                     <h2 style={{ fontSize: '1.2rem', marginBottom: '0.25rem', color: '#1e293b' }}>{item.productName}</h2>
                     <span style={{ fontSize: '0.85rem', color: '#64748b', display: 'block', marginBottom: '1rem' }}>{item.category}</span>
                   </div>
@@ -248,10 +251,10 @@ const Marketplace = () => {
               </div>
             ))}
           </div>
-          
+
           {pagination.totalPages > 1 && (
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', marginTop: '2rem' }}>
-              <button 
+              <button
                 onClick={() => setFilters(prev => ({ ...prev, page: Math.max(1, prev.page - 1) }))}
                 disabled={filters.page === 1}
                 className="btn btn-outline"
@@ -259,7 +262,7 @@ const Marketplace = () => {
                 <ChevronLeft size={20} /> Prev
               </button>
               <span style={{ fontWeight: 600, color: '#334155' }}>Page {pagination.page} of {pagination.totalPages}</span>
-              <button 
+              <button
                 onClick={() => setFilters(prev => ({ ...prev, page: Math.min(pagination.totalPages, prev.page + 1) }))}
                 disabled={filters.page === pagination.totalPages}
                 className="btn btn-outline"

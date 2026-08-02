@@ -52,8 +52,9 @@ exports.login = async (req, res) => {
     res.cookie('admin_token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 3600000 // 1 hour
+      sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+      maxAge: 24 * 60 * 60 * 1000,
+      path: '/'
     });
 
     res.json({ success: true, message: 'Logged in successfully.', admin: { name: adminUsername, role: 'owner-admin' } });
@@ -64,11 +65,11 @@ exports.login = async (req, res) => {
 };
 
 exports.logout = (req, res) => {
-  res.cookie('admin_token', '', {
+  res.clearCookie('admin_token', {
     httpOnly: true,
-    expires: new Date(0),
-    sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production'
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+    path: '/'
   });
   res.json({ success: true, message: 'Logged out successfully.' });
 };

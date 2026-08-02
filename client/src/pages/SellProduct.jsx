@@ -2,6 +2,9 @@ import React, { useState, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Tag, CheckCircle2, Upload, MapPin, X, AlertCircle } from 'lucide-react';
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:5001';
+
 const TN_DISTRICTS = [
   'Ariyalur', 'Chengalpattu', 'Chennai', 'Coimbatore', 'Cuddalore', 'Dharmapuri', 'Dindigul',
   'Erode', 'Kallakurichi', 'Kanchipuram', 'Kanyakumari', 'Karur', 'Krishnagiri', 'Madurai',
@@ -23,11 +26,11 @@ const UNITS = [
 const SellProduct = () => {
   const { t, language } = useLanguage();
   const fileInputRef = useRef(null);
-  
+
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
-  
+
   const getTodayDateString = () => {
     const today = new Date();
     return today.toISOString().split('T')[0];
@@ -65,13 +68,13 @@ const SellProduct = () => {
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     setErrorMsg('');
-    
+
     if (file) {
       if (file.size > 5 * 1024 * 1024) {
         setErrorMsg('Image size exceeds 5MB limit.');
         return;
       }
-      
+
       const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];
       if (!allowedTypes.includes(file.type)) {
         setErrorMsg('Unsupported image format. Please use JPG, PNG, or WEBP.');
@@ -97,10 +100,10 @@ const SellProduct = () => {
 
   const validateForm = () => {
     if (!form.farmerName.trim()) return "Farmer name is required";
-    
+
     const mobileCleaned = form.mobileNumber.replace(/\D/g, '');
     if (mobileCleaned.length !== 10) return "Mobile number must be exactly 10 digits";
-    
+
     if (!form.productName.trim()) return "Product name is required";
     if (!form.category) return "Category is required";
     if (!form.description.trim()) return "Description is required";
@@ -110,12 +113,12 @@ const SellProduct = () => {
     if (!form.district) return "District is required";
     if (!form.address.trim()) return "Address is required";
     if (!imageFile) return "Product image is required";
-    
+
     const harvest = new Date(form.harvestDate);
     const today = new Date();
     today.setHours(23, 59, 59, 999);
     if (harvest > today) return "Harvest date cannot be a future date";
-    
+
     const available = new Date(form.availableUntil);
     if (available < harvest) return "Available-until date must be after or equal to harvest date";
 
@@ -140,7 +143,7 @@ const SellProduct = () => {
       });
       formData.append('productImage', imageFile);
 
-      const response = await fetch('http://localhost:5001/api/products', {
+      const response = await fetch(`${API_BASE_URL}/api/products`, {
         method: 'POST',
         body: formData,
       });
@@ -192,7 +195,7 @@ const SellProduct = () => {
             <h3 style={{ fontSize: '1.25rem', color: '#064e3b', marginBottom: '1.25rem', borderBottom: '1px solid #d1fae5', paddingBottom: '0.5rem' }}>
               1. Farmer Details & Location
             </h3>
-            
+
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.25rem', marginBottom: '1.25rem' }}>
               <div className="form-group">
                 <label className="form-label">Farmer Name *</label>

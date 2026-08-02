@@ -3,11 +3,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { MapPin, PhoneCall, MessageCircle, ArrowLeft, Calendar, Info, Package, Leaf } from 'lucide-react';
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:5001';
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { t } = useLanguage();
-  
+
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -16,9 +18,9 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5001/api/products/${id}`);
+        const response = await fetch(`${API_BASE_URL}/api/products/${id}`);
         const result = await response.json();
-        
+
         if (result.success && result.data) {
           setProduct(result.data);
         } else {
@@ -57,7 +59,7 @@ const ProductDetails = () => {
   }
 
   const defaultImage = 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600';
-  const imgSource = product.imageUrl ? `http://localhost:5001${product.imageUrl}` : defaultImage;
+  const imgSource = product.imageUrl ? `${API_BASE_URL}${product.imageUrl}` : defaultImage;
 
   const formatDate = (dateString) => {
     if (!dateString) return 'N/A';
@@ -73,7 +75,7 @@ const ProductDetails = () => {
     if (cleaned.length === 10) {
       return `+91 ${cleaned.slice(0, 5)} ${cleaned.slice(5)}`;
     } else if (cleaned.length === 12 && cleaned.startsWith('91')) {
-       return `+91 ${cleaned.slice(2, 7)} ${cleaned.slice(7)}`;
+      return `+91 ${cleaned.slice(2, 7)} ${cleaned.slice(7)}`;
     }
     return mobile;
   };
@@ -84,8 +86,8 @@ const ProductDetails = () => {
 
   return (
     <div className="main-content">
-      <button 
-        onClick={() => navigate('/marketplace')} 
+      <button
+        onClick={() => navigate('/marketplace')}
         style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', marginBottom: '1.5rem', fontSize: '1rem', fontWeight: '500' }}
       >
         <ArrowLeft size={18} /> Back to Listings
@@ -94,13 +96,13 @@ const ProductDetails = () => {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem', backgroundColor: 'white', borderRadius: '1rem', overflow: 'hidden', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
         {/* Responsive Grid for Details */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '0' }}>
-          
+
           {/* Left Col: Image */}
           <div style={{ position: 'relative', minHeight: '300px' }}>
-            <img 
-              src={imgSource} 
-              alt={product.productName} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} 
+            <img
+              src={imgSource}
+              alt={product.productName}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
               onError={(e) => { e.target.src = defaultImage; }}
             />
             {product.isOrganic && (
@@ -115,9 +117,9 @@ const ProductDetails = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#059669', fontWeight: 600, marginBottom: '1rem' }}>
               <MapPin size={18} /> {product.village}, {product.district} District
             </div>
-            
+
             <h1 style={{ fontSize: '2.5rem', color: '#064e3b', marginBottom: '0.5rem', lineHeight: 1.2 }}>{product.productName}</h1>
-            
+
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.5rem' }}>
               <span style={{ backgroundColor: '#f1f5f9', color: '#475569', padding: '0.25rem 0.75rem', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 500 }}>
                 {product.category}
@@ -126,7 +128,7 @@ const ProductDetails = () => {
                 Posted on {formatDate(product.createdAt)}
               </span>
               <span style={{ color: '#94a3b8', fontSize: '0.875rem' }}>
-                 • {product.views} views
+                • {product.views} views
               </span>
             </div>
 
@@ -141,7 +143,7 @@ const ProductDetails = () => {
                   <Package size={20} color="#059669" /> {product.quantity} {product.unit}
                 </div>
               </div>
-              
+
               <div>
                 <span style={{ display: 'block', color: '#64748b', fontSize: '0.875rem', marginBottom: '0.25rem' }}>Selling Price</span>
                 <div style={{ color: '#059669', fontWeight: 800, fontSize: '1.75rem' }}>
@@ -175,7 +177,7 @@ const ProductDetails = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <h3 style={{ fontSize: '1.25rem', color: '#1e293b' }}>Farmer Details</h3>
               <div style={{ fontSize: '1.1rem', fontWeight: 600, color: '#334155' }}>{product.farmerName}</div>
-              
+
               {!showContact ? (
                 <button onClick={() => setShowContact(true)} className="btn btn-primary" style={{ padding: '1rem', fontSize: '1.1rem', justifyContent: 'center' }}>
                   Reveal Contact Details
@@ -185,18 +187,18 @@ const ProductDetails = () => {
                   <div style={{ padding: '1rem', backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '0.5rem', fontSize: '1.25rem', fontWeight: 700, color: '#064e3b', textAlign: 'center' }}>
                     {formatMobile(product.mobileNumber)}
                   </div>
-                  
+
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <a href={`tel:${rawMobile}`} className="btn btn-outline" style={{ justifyContent: 'center', borderColor: '#059669', color: '#059669' }}>
                       <PhoneCall size={20} /> Call Now
                     </a>
-                    
+
                     {product.preferredContactMethod !== 'phone' && (
-                      <a 
-                        href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="btn" 
+                      <a
+                        href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn"
                         style={{ justifyContent: 'center', backgroundColor: '#25D366', color: 'white' }}
                       >
                         <MessageCircle size={20} /> WhatsApp
